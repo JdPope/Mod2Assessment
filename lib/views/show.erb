@@ -1,0 +1,9 @@
+<h1><%= @kanye.name %></h1>
+<%= @kanye.album_sales %>
+<%= @kanye.hit_song %>
+
+
+<form method="post" action="/kanyes/<%= @kanye.id %>">
+ <input type="hidden" name="_method" value="delete" />
+ <input type="submit" />
+</form>

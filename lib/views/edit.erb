@@ -1,0 +1,17 @@
+<form action="/kanyes/<%= @kanye.id %>" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <ul>
+    
+      <label for="name">Name</label>
+      <input id="name" type="text" name="kanye[name]" value="<%= @kanye.name %>" />
+
+
+      <label for="album_sales">Album Sales</label>
+      <input id="name" type="number" name="kanye[album_sales]" value="<%= @kanye.album_sales %>" />
+
+      <label for="hit_song">Hit Song</label>
+      <input id="hit_song" type="text" name="kanye[hit_song]" value="<%= @kanye.hit_song %>" />
+
+  </ul>
+  <input type="submit" />
+</form>

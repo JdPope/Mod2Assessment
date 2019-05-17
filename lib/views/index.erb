@@ -1,0 +1,10 @@
+<html>
+  <head></head>
+  <body>
+    <ul>
+      <% @kanyes.each do |kanye| %>
+        <li><a><%= kanye.name %> - <%= kanye.album_sales %> - <%= kanye.hit_song %> </a></li>
+      <% end %>
+    </ul>
+  </body>
+</html>
